@@ -1729,8 +1729,8 @@ var map = L.map('mapid', {
 
 var ChurchIcon = L.Icon.extend({
 	options: {
-		iconSize:     [38, 65],
-		iconAnchor:   [22, 60],
+		iconSize:     [38, 60],
+		iconAnchor:   [22, 59],
 		popupAnchor:  [-3, -76]
 	}
 });
