@@ -53,6 +53,6 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 var markers = L.markerClusterGroup();
 churches.forEach(function(church){
-   markers.addLayer(L.marker([church.lat, church.lng]));
+   markers.addLayer(L.marker([church.lat, church.lon]));
 });
 map.addLayer(markers);
