@@ -1723,7 +1723,8 @@ let churches = [
 
 var map = L.map('mapid', {
 	center: [29.424122, -98.493629],
-	zoom: 8
+   zoom: 8,
+   scrollWheelZoom:false,
 });
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
