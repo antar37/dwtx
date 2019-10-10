@@ -1727,6 +1727,16 @@ var map = L.map('mapid', {
    scrollWheelZoom:false,
 });
 
+var ChurchIcon = L.Icon.extend({
+	options: {
+		iconSize:     [38, 95],
+		iconAnchor:   [22, 94],
+		popupAnchor:  [-3, -76]
+	}
+});
+
+var redIcon = new ChurchIcon({iconUrl: 'https://uploads-ssl.webflow.com/5d9b72537a2a6e593a84089e/5d9f32a6a121e084af9962b9_map-icon-church.svg'});
+
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
 	id: 'mapbox.streets',
 	accessToken: 'pk.eyJ1Ijoicmtkc3R1ZGlvIiwiYSI6ImNrMWpzaHVhNjIzeXgzYnA2aDd3bW92YzQifQ._P1ZMrxr85X9J8twAPYy-A'
@@ -1734,6 +1744,6 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 var markers = L.markerClusterGroup();
 churches.forEach(function(church){
-   markers.addLayer(L.marker([church.lat, church.lon]));
+   markers.addLayer(L.marker([church.lat, church.lon], {icon: redIcon}));
 });
 map.addLayer(markers);
