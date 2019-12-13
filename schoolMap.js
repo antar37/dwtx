@@ -255,7 +255,7 @@ var SchoolIcon = L.Icon.extend({
    }
 });
 
-var redIcon = new SchoolIcon({iconUrl: 'https://uploads-ssl.webflow.com/5d9b72537a2a6e593a84089e/5d9f32a6a121e084af9962b9_map-icon-church.svg'});
+var redIcon = new SchoolIcon({iconUrl: 'https://uploads-ssl.webflow.com/5d9b72537a2a6e593a84089e/5d9f329edd291b7c2fa7e516_map-icon-school.svg'});
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
    id: 'mapbox.streets',
